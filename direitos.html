@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direitos da Mulher - Voz Ativa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-circle">V</div>
+                <span class="logo-text">Voz Ativa</span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="tipos-violencia.html" class="nav-link">Tipos de Violência</a>
+                <a href="como-pedir-ajuda.html" class="nav-link">Como Pedir Ajuda</a>
+                <a href="denuncia.html" class="nav-link">Denunciar</a>
+                <a href="direitos.html" class="nav-link active">Direitos</a>
+                <a href="apoio-psicologico.html" class="nav-link">Apoio Psicológico</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+            </nav>
+            <div class="user-nav">
+                <a href="dashboard.html" class="user-nav-link">Minhas Denúncias</a>
+                <a href="login.html" class="user-nav-link">Login</a>
+                <a href="tel:180" class="btn-emergency">180</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div style="max-width: 48rem; margin: 0 auto; text-align: center;">
+                <h1>Direitos da Mulher</h1>
+                <p style="font-size: 1.25rem; color: var(--purple-100);">Conheça a Lei Maria da Penha e todos os seus direitos garantidos por lei</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-white">
+        <div class="container">
+            <div style="background: linear-gradient(135deg, var(--purple-600), var(--pink-500)); border-radius: 1rem; padding: 3rem; color: var(--white); max-width: 64rem; margin: 0 auto 3rem; text-align: center;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 1.5rem;">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                </svg>
+                <h2 style="font-size: 2.25rem; margin-bottom: 1rem;">Lei Maria da Penha</h2>
+                <p style="font-size: 1.125rem; color: var(--purple-100); line-height: 1.7;">Lei nº 11.340/2006 - Criada para coibir e prevenir a violência doméstica e familiar contra a mulher</p>
+            </div>
+
+            <div class="grid grid-2" style="max-width: 64rem; margin: 0 auto;">
+                <div class="card">
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1rem; color: var(--purple-900);">📋 Medidas Protetivas de Urgência</h3>
+                    <p style="color: var(--gray-700); margin-bottom: 1rem; line-height: 1.7;">O juiz pode determinar em até 48 horas:</p>
+                    <ul style="color: var(--gray-700); line-height: 1.7;">
+                        <li>Afastamento do agressor do lar</li>
+                        <li>Proibição de aproximação da vítima</li>
+                        <li>Proibição de contato</li>
+                        <li>Restrição de visitas aos dependentes</li>
+                        <li>Prestação de alimentos</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1rem; color: var(--pink-900);">⚖️ Seus Direitos Garantidos</h3>
+                    <ul style="color: var(--gray-700); line-height: 1.7;">
+                        <li>Atendimento prioritário em órgãos públicos</li>
+                        <li>Assistência judiciária gratuita</li>
+                        <li>Sigilo de dados pessoais</li>
+                        <li>Proteção policial quando necessário</li>
+                        <li>Acompanhamento psicológico</li>
+                        <li>Encaminhamento a abrigos seguros</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1rem;">🚨 Prisão do Agressor</h3>
+                    <p style="color: var(--gray-700); line-height: 1.7;">O agressor pode ser preso:</p>
+                    <ul style="color: var(--gray-700); line-height: 1.7;">
+                        <li>Em flagrante delito</li>
+                        <li>Por descumprimento de medida protetiva</li>
+                        <li>Preventivamente, se houver risco</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1rem;">💼 Direitos Trabalhistas</h3>
+                    <ul style="color: var(--gray-700); line-height: 1.7;">
+                        <li>Manutenção do vínculo de emprego por até 6 meses (suspensão)</li>
+                        <li>Afastamento do trabalho sem prejuízo salarial</li>
+                        <li>Mudança de local de trabalho quando possível</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-purple">
+        <div class="container">
+            <h2 class="section-title">Como Solicitar Medidas Protetivas</h2>
+            <div class="grid grid-4">
+                <div class="card">
+                    <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1.75rem; font-weight: bold; margin-bottom: 1rem;">1</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem;">Registre a Ocorrência</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">Vá até uma delegacia (preferencialmente DEAM) e registre boletim de ocorrência</p>
+                </div>
+                <div class="card">
+                    <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1.75rem; font-weight: bold; margin-bottom: 1rem;">2</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem;">Solicite as Medidas</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">Peça as medidas protetivas na delegacia ou diretamente ao juiz</p>
+                </div>
+                <div class="card">
+                    <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1.75rem; font-weight: bold; margin-bottom: 1rem;">3</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem;">Aguarde Decisão</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">O juiz tem até 48 horas para analisar e deferir as medidas</p>
+                </div>
+                <div class="card">
+                    <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-size: 1.75rem; font-weight: bold; margin-bottom: 1rem;">4</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem;">Acompanhe o Processo</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">Mantenha contato com defensoria/advogado e autoridades</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title" style="font-size: 2.5rem;">Conheça e Exerça Seus Direitos</h2>
+            <p class="cta-description">A Lei está do seu lado. Busque orientação jurídica gratuita na Defensoria Pública.</p>
+            <div class="cta-buttons">
+                <a href="como-pedir-ajuda.html" class="btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Ver Canais de Ajuda</a>
+                <a href="denuncia.html" class="btn-secondary" style="font-size: 1.125rem; padding: 1rem 2rem; background: var(--purple-800);">Fazer Denúncia</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Voz Ativa</h3>
+                <p style="color: var(--gray-400);">Plataforma de apoio e proteção à mulher em situação de violência.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <a href="tipos-violencia.html" class="footer-link">Tipos de Violência</a>
+                <a href="como-pedir-ajuda.html" class="footer-link">Como Pedir Ajuda</a>
+                <a href="direitos.html" class="footer-link">Direitos da Mulher</a>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <a href="denuncia.html" class="footer-link">Fazer Denúncia</a>
+                <a href="sobre.html" class="footer-link">Sobre o Projeto</a>
+            </div>
+            <div class="footer-section">
+                <h3>Emergência</h3>
+                <a href="tel:180" class="footer-link" style="font-weight: 600; color: var(--red-400);">180 - Central da Mulher</a>
+                <a href="tel:190" class="footer-link" style="font-weight: 600; color: var(--red-400);">190 - Polícia Militar</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Voz Ativa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

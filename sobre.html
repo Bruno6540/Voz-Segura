@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Projeto - Voz Ativa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-circle">V</div>
+                <span class="logo-text">Voz Ativa</span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="tipos-violencia.html" class="nav-link">Tipos de Violência</a>
+                <a href="como-pedir-ajuda.html" class="nav-link">Como Pedir Ajuda</a>
+                <a href="denuncia.html" class="nav-link">Denunciar</a>
+                <a href="direitos.html" class="nav-link">Direitos</a>
+                <a href="apoio-psicologico.html" class="nav-link">Apoio Psicológico</a>
+                <a href="sobre.html" class="nav-link active">Sobre</a>
+            </nav>
+            <div class="user-nav">
+                <a href="dashboard.html" class="user-nav-link">Minhas Denúncias</a>
+                <a href="login.html" class="user-nav-link">Login</a>
+                <a href="tel:180" class="btn-emergency">180</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div style="max-width: 48rem; margin: 0 auto; text-align: center;">
+                <h1>Sobre o Projeto Voz Ativa</h1>
+                <p style="font-size: 1.25rem; color: var(--purple-100);">Uma plataforma dedicada a apoiar e proteger mulheres em situação de violência</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-white">
+        <div class="container">
+            <div style="background: linear-gradient(135deg, var(--purple-600), var(--pink-600)); border-radius: 1rem; padding: 4rem; color: var(--white); max-width: 64rem; margin: 0 auto; box-shadow: var(--shadow-2xl);">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin: 0 auto 2rem; display: block;">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2"></path>
+                </svg>
+                <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem; text-align: center;">Nossa Missão</h2>
+                <p style="font-size: 1.25rem; color: var(--purple-100); line-height: 1.8; text-align: center;">
+                    Criar um espaço seguro e acolhedor onde mulheres em situação de violência possam encontrar informação, apoio e orientação para romper o ciclo de violência e reconstruir suas vidas com dignidade e autonomia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-gray">
+        <div class="container">
+            <h2 class="section-title">Nossos Objetivos</h2>
+            <div class="grid grid-2" style="max-width: 64rem; margin: 0 auto;">
+                <div class="card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--purple-600); margin-bottom: 1rem;">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 0.75rem;">Informar e Conscientizar</h3>
+                    <p style="color: var(--gray-700); line-height: 1.7;">Educar sobre os tipos de violência, direitos da mulher e canais de ajuda disponíveis.</p>
+                </div>
+                <div class="card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--pink-600); margin-bottom: 1rem;">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 0.75rem;">Acolher e Apoiar</h3>
+                    <p style="color: var(--gray-700); line-height: 1.7;">Oferecer um ambiente seguro e acolhedor para mulheres que buscam ajuda.</p>
+                </div>
+                <div class="card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #2563EB; margin-bottom: 1rem;">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                    </svg>
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 0.75rem;">Facilitar Denúncias</h3>
+                    <p style="color: var(--gray-700); line-height: 1.7;">Simplificar o processo de denúncia e registro de ocorrências.</p>
+                </div>
+                <div class="card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #16A34A; margin-bottom: 1rem;">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 0.75rem;">Conectar com Recursos</h3>
+                    <p style="color: var(--gray-700); line-height: 1.7;">Facilitar o acesso a serviços de apoio psicológico, jurídico e social.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-white">
+        <div class="container">
+            <h2 class="section-title">ODS 5 - Igualdade de Gênero</h2>
+            <div style="max-width: 64rem; margin: 0 auto; text-align: center; margin-bottom: 3rem;">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--purple-600); margin: 0 auto 1.5rem;">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    <path d="M2 12h20"></path>
+                </svg>
+                <p style="font-size: 1.125rem; color: var(--gray-700); line-height: 1.7;">
+                    Este projeto está alinhado com o Objetivo de Desenvolvimento Sustentável 5 da ONU: "Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas".
+                </p>
+            </div>
+
+            <div style="background: var(--purple-50); padding: 2rem; border-radius: 1rem; max-width: 64rem; margin: 0 auto;">
+                <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1.5rem; text-align: center; color: var(--purple-900);">Metas Específicas que Apoiamos:</h3>
+                <div class="grid grid-2" style="gap: 1rem;">
+                    <div style="display: flex; align-items: start; gap: 0.75rem;">
+                        <div style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: bold;">1</div>
+                        <p style="color: var(--gray-800); line-height: 1.7;">Acabar com todas as formas de discriminação contra mulheres e meninas</p>
+                    </div>
+                    <div style="display: flex; align-items: start; gap: 0.75rem;">
+                        <div style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: bold;">2</div>
+                        <p style="color: var(--gray-800); line-height: 1.7;">Eliminar todas as formas de violência contra mulheres e meninas</p>
+                    </div>
+                    <div style="display: flex; align-items: start; gap: 0.75rem;">
+                        <div style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: bold;">3</div>
+                        <p style="color: var(--gray-800); line-height: 1.7;">Garantir a participação plena das mulheres em todos os níveis de decisão</p>
+                    </div>
+                    <div style="display: flex; align-items: start; gap: 0.75rem;">
+                        <div style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: bold;">4</div>
+                        <p style="color: var(--gray-800); line-height: 1.7;">Adotar políticas sólidas e legislação aplicável para a promoção da igualdade de gênero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--purple-600); color: var(--white); padding: 5rem 1rem;">
+        <div class="container">
+            <h2 class="section-title">Impacto Esperado</h2>
+            <div class="grid grid-3">
+                <div class="stat-card">
+                    <div style="font-size: 4.5rem; font-weight: bold; color: var(--purple-100); margin-bottom: 1rem;">+1000</div>
+                    <p style="font-size: 1.25rem; color: var(--purple-200);">Mulheres apoiadas</p>
+                </div>
+                <div class="stat-card">
+                    <div style="font-size: 4.5rem; font-weight: bold; color: var(--pink-300); margin-bottom: 1rem;">24/7</div>
+                    <p style="font-size: 1.25rem; color: var(--purple-200);">Disponibilidade de informação</p>
+                </div>
+                <div class="stat-card">
+                    <div style="font-size: 4.5rem; font-weight: bold; color: var(--purple-100); margin-bottom: 1rem;">100%</div>
+                    <p style="font-size: 1.25rem; color: var(--purple-200);">Gratuito e acessível</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Voz Ativa</h3>
+                <p style="color: var(--gray-400);">Plataforma de apoio e proteção à mulher em situação de violência.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <a href="tipos-violencia.html" class="footer-link">Tipos de Violência</a>
+                <a href="como-pedir-ajuda.html" class="footer-link">Como Pedir Ajuda</a>
+                <a href="direitos.html" class="footer-link">Direitos da Mulher</a>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <a href="denuncia.html" class="footer-link">Fazer Denúncia</a>
+                <a href="sobre.html" class="footer-link">Sobre o Projeto</a>
+            </div>
+            <div class="footer-section">
+                <h3>Emergência</h3>
+                <a href="tel:180" class="footer-link" style="font-weight: 600; color: var(--red-400);">180 - Central da Mulher</a>
+                <a href="tel:190" class="footer-link" style="font-weight: 600; color: var(--red-400);">190 - Polícia Militar</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Voz Ativa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

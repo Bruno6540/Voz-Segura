@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Violência - Voz Ativa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-circle">V</div>
+                <span class="logo-text">Voz Ativa</span>
+            </a>
+
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="tipos-violencia.html" class="nav-link active">Tipos de Violência</a>
+                <a href="como-pedir-ajuda.html" class="nav-link">Como Pedir Ajuda</a>
+                <a href="denuncia.html" class="nav-link">Denunciar</a>
+                <a href="direitos.html" class="nav-link">Direitos</a>
+                <a href="apoio-psicologico.html" class="nav-link">Apoio Psicológico</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+            </nav>
+
+            <div class="user-nav">
+                <a href="dashboard.html" class="user-nav-link">Minhas Denúncias</a>
+                <a href="login.html" class="user-nav-link">Login</a>
+                <a href="tel:180" class="btn-emergency">180</a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Início</a>
+            <a href="tipos-violencia.html" class="mobile-nav-link active">Tipos de Violência</a>
+            <a href="como-pedir-ajuda.html" class="mobile-nav-link">Como Pedir Ajuda</a>
+            <a href="denuncia.html" class="mobile-nav-link">Denunciar</a>
+            <a href="direitos.html" class="mobile-nav-link">Direitos</a>
+            <a href="apoio-psicologico.html" class="mobile-nav-link">Apoio Psicológico</a>
+            <a href="sobre.html" class="mobile-nav-link">Sobre</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div style="max-width: 48rem; margin: 0 auto; text-align: center;">
+                <h1>Tipos de Violência Contra a Mulher</h1>
+                <p style="font-size: 1.25rem; color: var(--purple-100);">
+                    Reconhecer a violência é o primeiro passo para buscar ajuda. Conheça os 5 tipos de violência previstos na Lei Maria da Penha.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alert Box -->
+    <section class="section-white">
+        <div class="container">
+            <div style="background: var(--red-50); border-left: 4px solid var(--red-600); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 3rem;">
+                <div style="display: flex; gap: 1rem; align-items-start;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; color: var(--red-600);">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <div>
+                        <h3 style="font-weight: 600; margin-bottom: 0.5rem; color: var(--red-600);">Em Situação de Risco?</h3>
+                        <p style="color: var(--red-800);">Se você está em situação de perigo imediato, não hesite em ligar para 190 (Polícia Militar) ou 180 (Central de Atendimento à Mulher). Sua segurança é prioridade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tipos de Violência -->
+            <div style="max-width: 64rem; margin: 0 auto;">
+                <!-- Violência Física -->
+                <div class="card mb-4" style="padding: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div class="card-icon card-icon-red" style="margin: 0; width: 40px; height: 40px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path>
+                            </svg>
+                        </div>
+                        <h2 style="font-size: 1.5rem; margin: 0;">1. Violência Física</h2>
+                    </div>
+                    <p style="font-size: 1.125rem; color: var(--gray-700); margin-bottom: 1.5rem; line-height: 1.7;">
+                        Qualquer conduta que ofenda a integridade ou saúde corporal da mulher. Inclui desde tapas, empurrões até lesões graves.
+                    </p>
+                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem;">
+                        <h3 style="font-weight: 600; margin-bottom: 1rem;">Exemplos comuns:</h3>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--red-600);">•</span>
+                                <span>Empurrões, tapas, socos, chutes</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--red-600);">•</span>
+                                <span>Puxões de cabelo, mordidas, queimaduras</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--red-600);">•</span>
+                                <span>Uso de armas brancas ou de fogo</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--red-600);">•</span>
+                                <span>Arremesso de objetos</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Violência Psicológica -->
+                <div class="card mb-4" style="padding: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div class="card-icon card-icon-purple" style="margin: 0; width: 40px; height: 40px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="12"></line>
+                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            </svg>
+                        </div>
+                        <h2 style="font-size: 1.5rem; margin: 0;">2. Violência Psicológica</h2>
+                    </div>
+                    <p style="font-size: 1.125rem; color: var(--gray-700); margin-bottom: 1.5rem; line-height: 1.7;">
+                        Conduta que cause dano emocional, diminua a autoestima ou prejudique o desenvolvimento pessoal. Pode ser tão prejudicial quanto a violência física.
+                    </p>
+                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem;">
+                        <h3 style="font-weight: 600; margin-bottom: 1rem;">Exemplos comuns:</h3>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--purple-600);">•</span>
+                                <span>Humilhações, xingamentos, insultos constantes</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--purple-600);">•</span>
+                                <span>Ameaças, intimidação, chantagem emocional</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--purple-600);">•</span>
+                                <span>Isolamento de amigos e familiares</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--purple-600);">•</span>
+                                <span>Controle excessivo de comportamento, roupas, horários</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--purple-600);">•</span>
+                                <span>Críticas constantes, desvalorização</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Violência Sexual -->
+                <div class="card mb-4" style="padding: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div class="card-icon card-icon-pink" style="margin: 0; width: 40px; height: 40px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h2 style="font-size: 1.5rem; margin: 0;">3. Violência Sexual</h2>
+                    </div>
+                    <p style="font-size: 1.125rem; color: var(--gray-700); margin-bottom: 1.5rem; line-height: 1.7;">
+                        Qualquer conduta que constranja a presenciar, manter ou participar de relação sexual não desejada, mediante intimidação, ameaça, coação ou uso da força.
+                    </p>
+                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem;">
+                        <h3 style="font-weight: 600; margin-bottom: 1rem;">Exemplos comuns:</h3>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--pink-600);">•</span>
+                                <span>Estupro, inclusive no casamento</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--pink-600);">•</span>
+                                <span>Obrigar a práticas sexuais não desejadas</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--pink-600);">•</span>
+                                <span>Impedir uso de métodos contraceptivos</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--pink-600);">•</span>
+                                <span>Forçar gravidez ou aborto</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: var(--pink-600);">•</span>
+                                <span>Fotografar/filmar sem consentimento</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Violência Patrimonial -->
+                <div class="card mb-4" style="padding: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div class="card-icon card-icon-blue" style="margin: 0; width: 40px; height: 40px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h2 style="font-size: 1.5rem; margin: 0;">4. Violência Patrimonial</h2>
+                    </div>
+                    <p style="font-size: 1.125rem; color: var(--gray-700); margin-bottom: 1.5rem; line-height: 1.7;">
+                        Conduta que configure retenção, subtração, destruição parcial ou total de objetos, instrumentos de trabalho, documentos pessoais, bens, valores e direitos.
+                    </p>
+                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem;">
+                        <h3 style="font-weight: 600; margin-bottom: 1rem;">Exemplos comuns:</h3>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: #2563EB;">•</span>
+                                <span>Destruição de objetos pessoais, roupas, móveis</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: #2563EB;">•</span>
+                                <span>Reter documentos pessoais (RG, CPF, cartões)</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: #2563EB;">•</span>
+                                <span>Controle do salário ou recursos financeiros</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: #2563EB;">•</span>
+                                <span>Furto, estelionato, exploração</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: #2563EB;">•</span>
+                                <span>Impedir de trabalhar ou estudar</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Violência Moral -->
+                <div class="card mb-4" style="padding: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div class="card-icon card-icon-green" style="margin: 0; width: 40px; height: 40px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h2 style="font-size: 1.5rem; margin: 0;">5. Violência Moral</h2>
+                    </div>
+                    <p style="font-size: 1.125rem; color: var(--gray-700); margin-bottom: 1.5rem; line-height: 1.7;">
+                        Qualquer conduta que configure calúnia (acusar falsamente de crime), difamação (ofender reputação) ou injúria (ofender dignidade).
+                    </p>
+                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem;">
+                        <h3 style="font-weight: 600; margin-bottom: 1rem;">Exemplos comuns:</h3>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: #16A34A;">•</span>
+                                <span>Acusar falsamente de infidelidade</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: #16A34A;">•</span>
+                                <span>Espalhar mentiras e boatos</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: #16A34A;">•</span>
+                                <span>Expor vida íntima publicamente</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: #16A34A;">•</span>
+                                <span>Fazer críticas ofensivas em público ou redes sociais</span>
+                            </li>
+                            <li style="display: flex; align-items: start; gap: 0.5rem;">
+                                <span style="color: #16A34A;">•</span>
+                                <span>Rebaixar a mulher por atributos físicos</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ciclo da Violência -->
+    <section class="section-purple">
+        <div class="container">
+            <h2 class="section-title">O Ciclo da Violência</h2>
+            <p class="section-description">A violência doméstica geralmente segue um padrão cíclico de três fases</p>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="width: 48px; height: 48px; border-radius: 50%; background: #FEF3C7; color: #D97706; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">1</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem; font-size: 1.25rem;">Tensão</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">Aumento gradual da tensão, irritabilidade, ameaças verbais. A vítima tenta acalmar o agressor.</p>
+                </div>
+
+                <div class="card">
+                    <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--red-50); color: var(--red-600); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">2</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem; font-size: 1.25rem;">Agressão</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">Explosão de violência física, psicológica, sexual, patrimonial ou moral. Momento de maior perigo.</p>
+                </div>
+
+                <div class="card">
+                    <div style="width: 48px; height: 48px; border-radius: 50%; background: #DCFCE7; color: #16A34A; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">3</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem; font-size: 1.25rem;">Lua de Mel</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">Pedidos de desculpas, promessas de mudança, comportamento amoroso. Fase temporária que reinicia o ciclo.</p>
+                </div>
+            </div>
+
+            <div class="card mt-4" style="background: var(--white); border-left: 4px solid var(--purple-600); max-width: 64rem; margin: 2rem auto 0;">
+                <h3 style="font-weight: 600; margin-bottom: 1rem; color: var(--purple-900);">⚠️ Importante Saber</h3>
+                <p style="color: var(--gray-700); line-height: 1.7;">O ciclo tende a se repetir com intervalos cada vez menores entre as fases, e a violência tende a aumentar em intensidade. Romper este ciclo requer ajuda profissional e apoio externo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title" style="font-size: 2.5rem;">Reconheceu Alguma Situação?</h2>
+            <p class="cta-description">Se você ou alguém que você conhece está passando por violência, busque ajuda. Você não está sozinha.</p>
+            <div class="cta-buttons">
+                <a href="como-pedir-ajuda.html" class="btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Ver Canais de Ajuda</a>
+                <a href="denuncia.html" class="btn-secondary" style="font-size: 1.125rem; padding: 1rem 2rem; background: var(--purple-800);">Fazer Denúncia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Voz Ativa</h3>
+                <p style="color: var(--gray-400);">Plataforma de apoio e proteção à mulher em situação de violência.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <a href="tipos-violencia.html" class="footer-link">Tipos de Violência</a>
+                <a href="como-pedir-ajuda.html" class="footer-link">Como Pedir Ajuda</a>
+                <a href="direitos.html" class="footer-link">Direitos da Mulher</a>
+                <a href="apoio-psicologico.html" class="footer-link">Apoio Psicológico</a>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <a href="denuncia.html" class="footer-link">Fazer Denúncia</a>
+                <a href="sobre.html" class="footer-link">Sobre o Projeto</a>
+                <a href="login.html" class="footer-link">Login / Cadastro</a>
+            </div>
+            <div class="footer-section">
+                <h3>Emergência</h3>
+                <a href="tel:180" class="footer-link" style="font-weight: 600; color: var(--red-400);">180 - Central da Mulher</a>
+                <a href="tel:190" class="footer-link" style="font-weight: 600; color: var(--red-400);">190 - Polícia Militar</a>
+                <a href="tel:188" class="footer-link">188 - CVV</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Voz Ativa. Todos os direitos reservados. | LGPD Conforme</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

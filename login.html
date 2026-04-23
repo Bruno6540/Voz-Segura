@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Cadastro - Voz Ativa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Simplificado -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-circle">V</div>
+                <span class="logo-text">Voz Ativa</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Login/Cadastro Section -->
+    <section style="min-height: 100vh; background: linear-gradient(135deg, var(--purple-50), var(--pink-50)); padding: 3rem 1rem;">
+        <div class="container" style="max-width: 28rem; margin: 0 auto;">
+            <!-- Header -->
+            <div class="text-center mb-4">
+                <div class="card-icon card-icon-purple" style="margin: 0 auto 1rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <h1 style="font-size: 2.25rem; margin-bottom: 0.75rem;">Voz Ativa</h1>
+                <p style="font-size: 1.125rem; color: var(--gray-600);">Acesse sua conta ou crie uma nova</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tabs-list" style="background: var(--white); border-radius: 0.5rem; padding: 0.25rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.25rem; border: none;">
+                    <button class="tab-trigger active" onclick="showTab('login')" style="padding: 0.75rem; border-radius: 0.375rem; font-weight: 600;" id="loginTab">Login</button>
+                    <button class="tab-trigger" onclick="showTab('cadastro')" style="padding: 0.75rem; border-radius: 0.375rem; font-weight: 600;" id="cadastroTab">Cadastro</button>
+                </div>
+
+                <!-- Login Tab -->
+                <div class="tab-content active" id="loginContent">
+                    <div class="card">
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Bem-vinda de volta</h2>
+                        <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Entre com suas credenciais para acessar sua conta</p>
+
+                        <form onsubmit="handleLogin(event)">
+                            <div class="form-group">
+                                <label class="form-label" for="login-email">E-mail</label>
+                                <input type="email" id="login-email" class="form-input" placeholder="seu@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="login-senha">Senha</label>
+                                <input type="password" id="login-senha" class="form-input" placeholder="••••••••" required>
+                            </div>
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: var(--gray-700); cursor: pointer;">
+                                    <input type="checkbox" class="form-checkbox">
+                                    Lembrar de mim
+                                </label>
+                                <a href="#" style="font-size: 0.875rem; color: var(--purple-600); text-decoration: none;">
+                                    Esqueci minha senha
+                                </a>
+                            </div>
+
+                            <button type="submit" class="btn btn-purple" style="width: 100%;">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Cadastro Tab -->
+                <div class="tab-content" id="cadastroContent">
+                    <div class="card">
+                        <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Criar nova conta</h2>
+                        <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Preencha os dados abaixo para criar sua conta</p>
+
+                        <form onsubmit="handleCadastro(event)">
+                            <div class="form-group">
+                                <label class="form-label" for="cadastro-nome">Nome completo</label>
+                                <input type="text" id="cadastro-nome" class="form-input" placeholder="Seu nome" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="cadastro-email">E-mail</label>
+                                <input type="email" id="cadastro-email" class="form-input" placeholder="seu@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="cadastro-telefone">Telefone (opcional)</label>
+                                <input type="tel" id="cadastro-telefone" class="form-input" placeholder="(11) 98765-4321">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="cadastro-senha">Senha</label>
+                                <input type="password" id="cadastro-senha" class="form-input" placeholder="••••••••" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="cadastro-confirmar">Confirmar senha</label>
+                                <input type="password" id="cadastro-confirmar" class="form-input" placeholder="••••••••" required>
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: flex; align-items-start; gap: 0.5rem; font-size: 0.875rem; color: var(--gray-700); cursor: pointer;">
+                                    <input type="checkbox" class="form-checkbox" required style="margin-top: 0.25rem;">
+                                    <span>
+                                        Concordo com os <a href="#" style="color: var(--purple-600);">termos de uso</a> e
+                                        <a href="#" style="color: var(--purple-600);">política de privacidade</a>,
+                                        e autorizo o tratamento dos meus dados conforme a LGPD
+                                    </span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-purple" style="width: 100%;">Criar Conta</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy Notice -->
+            <div class="card mt-4">
+                <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Proteção de Dados Pessoais</h3>
+                <p style="font-size: 0.875rem; color: var(--gray-700); line-height: 1.7;">
+                    Este site respeita e protege seus dados conforme a Lei Geral de Proteção de Dados (LGPD - Lei 13.709/2018).
+                    Todas as informações fornecidas são tratadas com confidencialidade e segurança.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showTab(tabName) {
+            // Esconder todos os conteúdos
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-trigger').forEach(trigger => {
+                trigger.classList.remove('active');
+                trigger.style.background = 'transparent';
+                trigger.style.color = 'var(--gray-600)';
+            });
+
+            // Mostrar conteúdo selecionado
+            if (tabName === 'login') {
+                document.getElementById('loginContent').classList.add('active');
+                document.getElementById('loginTab').classList.add('active');
+                document.getElementById('loginTab').style.background = 'var(--white)';
+                document.getElementById('loginTab').style.color = 'var(--purple-600)';
+            } else {
+                document.getElementById('cadastroContent').classList.add('active');
+                document.getElementById('cadastroTab').classList.add('active');
+                document.getElementById('cadastroTab').style.background = 'var(--white)';
+                document.getElementById('cadastroTab').style.color = 'var(--purple-600)';
+            }
+        }
+
+        function handleLogin(event) {
+            event.preventDefault();
+            alert('Login realizado com sucesso!');
+            window.location.href = 'dashboard.html';
+        }
+
+        function handleCadastro(event) {
+            event.preventDefault();
+            const senha = document.getElementById('cadastro-senha').value;
+            const confirmar = document.getElementById('cadastro-confirmar').value;
+
+            if (senha !== confirmar) {
+                alert('As senhas não coincidem!');
+                return;
+            }
+
+            alert('Cadastro realizado com sucesso!');
+            window.location.href = 'dashboard.html';
+        }
+
+        // Estilizar tab ativo ao carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('loginTab').style.background = 'var(--white)';
+            document.getElementById('loginTab').style.color = 'var(--purple-600)';
+        });
+    </script>
+</body>
+</html>

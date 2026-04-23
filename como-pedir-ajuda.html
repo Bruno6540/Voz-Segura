@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Pedir Ajuda - Voz Ativa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <div class="logo-circle">V</div>
+                <span class="logo-text">Voz Ativa</span>
+            </a>
+
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="tipos-violencia.html" class="nav-link">Tipos de Violência</a>
+                <a href="como-pedir-ajuda.html" class="nav-link active">Como Pedir Ajuda</a>
+                <a href="denuncia.html" class="nav-link">Denunciar</a>
+                <a href="direitos.html" class="nav-link">Direitos</a>
+                <a href="apoio-psicologico.html" class="nav-link">Apoio Psicológico</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+            </nav>
+
+            <div class="user-nav">
+                <a href="dashboard.html" class="user-nav-link">Minhas Denúncias</a>
+                <a href="login.html" class="user-nav-link">Login</a>
+                <a href="tel:180" class="btn-emergency">180</a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-nav-link">Início</a>
+            <a href="tipos-violencia.html" class="mobile-nav-link">Tipos de Violência</a>
+            <a href="como-pedir-ajuda.html" class="mobile-nav-link active">Como Pedir Ajuda</a>
+            <a href="denuncia.html" class="mobile-nav-link">Denunciar</a>
+            <a href="direitos.html" class="mobile-nav-link">Direitos</a>
+            <a href="apoio-psicologico.html" class="mobile-nav-link">Apoio Psicológico</a>
+            <a href="sobre.html" class="mobile-nav-link">Sobre</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div style="max-width: 48rem; margin: 0 auto; text-align: center;">
+                <h1>Como Pedir Ajuda</h1>
+                <p style="font-size: 1.25rem; color: var(--purple-100);">
+                    Você não precisa enfrentar essa situação sozinha. Existem diversos canais de apoio e proteção disponíveis 24 horas por dia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Canais de Emergência -->
+    <section class="section-white">
+        <div class="container">
+            <h2 class="section-title">Canais de Atendimento Emergencial</h2>
+            <p class="section-description">Ligue imediatamente se você estiver em perigo</p>
+
+            <div class="grid grid-2" style="max-width: 64rem; margin: 0 auto;">
+                <!-- 180 -->
+                <div class="card" style="background: linear-gradient(135deg, var(--purple-600), var(--pink-600)); color: var(--white); text-align: center;">
+                    <div style="font-size: 3rem; font-weight: bold; margin-bottom: 1rem;">180</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Central de Atendimento à Mulher</h3>
+                    <p style="font-size: 1rem; color: var(--purple-100); margin-bottom: 1.5rem; line-height: 1.7;">
+                        Atendimento especializado para mulheres em situação de violência. Orientação, encaminhamento e apoio.
+                    </p>
+                    <p style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        Disponível 24h, todos os dias
+                    </p>
+                    <a href="tel:180" class="btn" style="width: 100%; background: var(--white); color: var(--purple-600);">
+                        📞 Ligar Agora
+                    </a>
+                </div>
+
+                <!-- 190 -->
+                <div class="card" style="background: linear-gradient(135deg, var(--red-600), var(--red-700)); color: var(--white); text-align: center;">
+                    <div style="font-size: 3rem; font-weight: bold; margin-bottom: 1rem;">190</div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem;">Polícia Militar</h3>
+                    <p style="font-size: 1rem; color: var(--red-50); margin-bottom: 1.5rem; line-height: 1.7;">
+                        Para situações de perigo imediato, ameaça ou violência em andamento. Atendimento emergencial.
+                    </p>
+                    <p style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        Disponível 24h, todos os dias
+                    </p>
+                    <a href="tel:190" class="btn" style="width: 100%; background: var(--white); color: var(--red-600);">
+                        📞 Ligar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outros Canais -->
+    <section class="section-gray">
+        <div class="container">
+            <h2 class="section-title">Outros Canais de Apoio</h2>
+
+            <div class="grid grid-2" style="max-width: 64rem; margin: 0 auto;">
+                <div class="card">
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1rem;">📱 Aplicativo Direitos Humanos BR</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1rem; line-height: 1.7;">
+                        App do governo federal para denúncias de violações de direitos humanos, incluindo violência contra a mulher.
+                    </p>
+                    <p style="font-size: 0.875rem; color: var(--gray-600); background: var(--gray-50); padding: 0.75rem; border-radius: 0.5rem;">
+                        Disponível para Android e iOS
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1rem;">💻 Portal Disque 100</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1rem; line-height: 1.7;">
+                        Canal online para denúncias de violações de direitos humanos. Atendimento 24h.
+                    </p>
+                    <p style="font-size: 0.875rem; color: var(--gray-600); background: var(--gray-50); padding: 0.75rem; border-radius: 0.5rem;">
+                        Acesse: disque100.mdh.gov.br
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1rem;">📞 CVV - 188</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1rem; line-height: 1.7;">
+                        Centro de Valorização da Vida. Apoio emocional e prevenção do suicídio.
+                    </p>
+                    <p style="font-size: 0.875rem; color: var(--gray-600); background: var(--gray-50); padding: 0.75rem; border-radius: 0.5rem;">
+                        24h por telefone, chat e e-mail
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1rem;">🏛️ Defensoria Pública</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1rem; line-height: 1.7;">
+                        Assistência jurídica gratuita para mulheres em situação de vulnerabilidade.
+                    </p>
+                    <p style="font-size: 0.875rem; color: var(--gray-600); background: var(--gray-50); padding: 0.75rem; border-radius: 0.5rem;">
+                        Busque a Defensoria Pública da sua cidade
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instituições de Apoio -->
+    <section class="section-white">
+        <div class="container">
+            <h2 class="section-title">Instituições de Apoio</h2>
+            <p class="section-description">Locais físicos onde você pode buscar ajuda presencial</p>
+
+            <div class="grid grid-2" style="max-width: 64rem; margin: 0 auto;">
+                <div class="card" style="background: var(--purple-50);">
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1rem; color: var(--purple-900);">
+                        Delegacia Especializada de Atendimento à Mulher (DEAM)
+                    </h3>
+                    <p style="color: var(--gray-700); margin-bottom: 1rem; line-height: 1.7;">
+                        Delegacias especializadas no atendimento de mulheres vítimas de violência.
+                    </p>
+                    <div style="background: var(--white); padding: 1rem; border-radius: 0.5rem;">
+                        <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--purple-900);">Serviços oferecidos:</p>
+                        <ul style="margin: 0; padding-left: 1.25rem; color: var(--gray-700);">
+                            <li>Registro de boletim de ocorrência</li>
+                            <li>Pedido de medidas protetivas</li>
+                            <li>Orientação legal</li>
+                            <li>Encaminhamento para outros serviços</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card" style="background: var(--pink-50);">
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1rem; color: var(--pink-900);">
+                        Centros de Referência da Mulher
+                    </h3>
+                    <p style="color: var(--gray-700); margin-bottom: 1rem; line-height: 1.7;">
+                        Espaços de acolhimento e orientação para mulheres em situação de violência.
+                    </p>
+                    <div style="background: var(--white); padding: 1rem; border-radius: 0.5rem;">
+                        <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--pink-900);">Serviços oferecidos:</p>
+                        <ul style="margin: 0; padding-left: 1.25rem; color: var(--gray-700);">
+                            <li>Atendimento psicológico</li>
+                            <li>Assistência social</li>
+                            <li>Orientação jurídica</li>
+                            <li>Apoio para autonomia</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card" style="background: #DBEAFE;">
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1rem; color: #1E40AF;">
+                        Casas Abrigo
+                    </h3>
+                    <p style="color: var(--gray-700); margin-bottom: 1rem; line-height: 1.7;">
+                        Locais sigilosos que garantem proteção e moradia temporária.
+                    </p>
+                    <div style="background: var(--white); padding: 1rem; border-radius: 0.5rem;">
+                        <p style="font-weight: 600; margin-bottom: 0.5rem; color: #1E40AF;">Serviços oferecidos:</p>
+                        <ul style="margin: 0; padding-left: 1.25rem; color: var(--gray-700);">
+                            <li>Moradia segura e sigilosa</li>
+                            <li>Alimentação e suporte básico</li>
+                            <li>Atendimento psicossocial</li>
+                            <li>Orientação para nova vida</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card" style="background: #DCFCE7;">
+                    <h3 style="font-weight: 600; font-size: 1.25rem; margin-bottom: 1rem; color: #15803D;">
+                        Juizados de Violência Doméstica
+                    </h3>
+                    <p style="color: var(--gray-700); margin-bottom: 1rem; line-height: 1.7;">
+                        Especializados em julgar crimes previstos na Lei Maria da Penha.
+                    </p>
+                    <div style="background: var(--white); padding: 1rem; border-radius: 0.5rem;">
+                        <p style="font-weight: 600; margin-bottom: 0.5rem; color: #15803D;">Serviços oferecidos:</p>
+                        <ul style="margin: 0; padding-left: 1.25rem; color: var(--gray-700);">
+                            <li>Análise de medidas protetivas</li>
+                            <li>Julgamento de processos</li>
+                            <li>Acompanhamento do caso</li>
+                            <li>Decisões judiciais</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Passos de Segurança -->
+    <section class="section-purple">
+        <div class="container">
+            <h2 class="section-title">Passos para sua Segurança</h2>
+            <p class="section-description">Orientações práticas para se proteger em situação de risco</p>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 1rem;">1</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem;">Documente as Agressões</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">
+                        Registre fotos de lesões, guarde mensagens ameaçadoras, áudios e qualquer evidência. Isso será importante para as autoridades.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 1rem;">2</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem;">Tenha um Plano de Fuga</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">
+                        Identifique saídas seguras, deixe documentos importantes em local acessível, combine códigos com vizinhos ou familiares.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 1rem;">3</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem;">Conte para Alguém</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">
+                        Compartilhe sua situação com pessoas de confiança: familiares, amigos, vizinhos. Ter uma rede de apoio é fundamental.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 1rem;">4</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem;">Procure Ajuda Profissional</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">
+                        Busque orientação na delegacia, defensoria pública ou centros de atendimento. Profissionais podem ajudá-la.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 1rem;">5</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem;">Solicite Medidas Protetivas</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">
+                        A Lei Maria da Penha garante medidas urgentes de proteção. Peça na delegacia ou diretamente ao juiz.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--purple-600); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 1rem;">6</div>
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem;">Proteja suas Informações</h3>
+                    <p style="color: var(--gray-600); line-height: 1.7;">
+                        Troque senhas, apague histórico de navegação, desative localização do celular se necessário. Sua privacidade é importante.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title" style="font-size: 2.5rem;">Você Não Está Sozinha</h2>
+            <p class="cta-description">Buscar ajuda é um ato de coragem. Existem pessoas e instituições prontas para apoiá-la nesse momento difícil.</p>
+            <div class="cta-buttons">
+                <a href="denuncia.html" class="btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Fazer Denúncia</a>
+                <a href="direitos.html" class="btn-secondary" style="font-size: 1.125rem; padding: 1rem 2rem; background: var(--purple-800);">Conheça Seus Direitos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Voz Ativa</h3>
+                <p style="color: var(--gray-400);">Plataforma de apoio e proteção à mulher em situação de violência.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <a href="tipos-violencia.html" class="footer-link">Tipos de Violência</a>
+                <a href="como-pedir-ajuda.html" class="footer-link">Como Pedir Ajuda</a>
+                <a href="direitos.html" class="footer-link">Direitos da Mulher</a>
+                <a href="apoio-psicologico.html" class="footer-link">Apoio Psicológico</a>
+            </div>
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <a href="denuncia.html" class="footer-link">Fazer Denúncia</a>
+                <a href="sobre.html" class="footer-link">Sobre o Projeto</a>
+                <a href="login.html" class="footer-link">Login / Cadastro</a>
+            </div>
+            <div class="footer-section">
+                <h3>Emergência</h3>
+                <a href="tel:180" class="footer-link" style="font-weight: 600; color: var(--red-400);">180 - Central da Mulher</a>
+                <a href="tel:190" class="footer-link" style="font-weight: 600; color: var(--red-400);">190 - Polícia Militar</a>
+                <a href="tel:188" class="footer-link">188 - CVV</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Voz Ativa. Todos os direitos reservados. | LGPD Conforme</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
