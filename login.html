@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login / Cadastro - Voz Ativa</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Header Simplificado -->
     <header>
@@ -19,7 +22,8 @@
     </header>
 
     <!-- Login/Cadastro Section -->
-    <section style="min-height: 100vh; background: linear-gradient(135deg, var(--purple-50), var(--pink-50)); padding: 3rem 1rem;">
+    <section
+        style="min-height: 100vh; background: linear-gradient(135deg, var(--purple-50), var(--pink-50)); padding: 3rem 1rem;">
         <div class="container" style="max-width: 28rem; margin: 0 auto;">
             <!-- Header -->
             <div class="text-center mb-4">
@@ -34,34 +38,45 @@
 
             <!-- Tabs -->
             <div class="tabs">
-                <div class="tabs-list" style="background: var(--white); border-radius: 0.5rem; padding: 0.25rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.25rem; border: none;">
-                    <button class="tab-trigger active" onclick="showTab('login')" style="padding: 0.75rem; border-radius: 0.375rem; font-weight: 600;" id="loginTab">Login</button>
-                    <button class="tab-trigger" onclick="showTab('cadastro')" style="padding: 0.75rem; border-radius: 0.375rem; font-weight: 600;" id="cadastroTab">Cadastro</button>
+                <div class="tabs-list"
+                    style="background: var(--white); border-radius: 0.5rem; padding: 0.25rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.25rem; border: none;">
+                    <button class="tab-trigger active" onclick="showTab('login')"
+                        style="padding: 0.75rem; border-radius: 0.375rem; font-weight: 600;"
+                        id="loginTab">Login</button>
+                    <button class="tab-trigger" onclick="showTab('cadastro')"
+                        style="padding: 0.75rem; border-radius: 0.375rem; font-weight: 600;"
+                        id="cadastroTab">Cadastro</button>
                 </div>
 
                 <!-- Login Tab -->
                 <div class="tab-content active" id="loginContent">
                     <div class="card">
                         <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Bem-vinda de volta</h2>
-                        <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Entre com suas credenciais para acessar sua conta</p>
+                        <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Entre com suas credenciais para
+                            acessar sua conta</p>
 
                         <form onsubmit="handleLogin(event)">
                             <div class="form-group">
                                 <label class="form-label" for="login-email">E-mail</label>
-                                <input type="email" id="login-email" class="form-input" placeholder="seu@email.com" required>
+                                <input type="email" id="login-email" class="form-input" placeholder="seu@email.com"
+                                    required>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="login-senha">Senha</label>
-                                <input type="password" id="login-senha" class="form-input" placeholder="••••••••" required>
+                                <input type="password" id="login-senha" class="form-input" placeholder="••••••••"
+                                    required>
                             </div>
 
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: var(--gray-700); cursor: pointer;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                                <label
+                                    style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: var(--gray-700); cursor: pointer;">
                                     <input type="checkbox" class="form-checkbox">
                                     Lembrar de mim
                                 </label>
-                                <a href="#" style="font-size: 0.875rem; color: var(--purple-600); text-decoration: none;">
+                                <a href="#"
+                                    style="font-size: 0.875rem; color: var(--purple-600); text-decoration: none;">
                                     Esqueci minha senha
                                 </a>
                             </div>
@@ -75,39 +90,47 @@
                 <div class="tab-content" id="cadastroContent">
                     <div class="card">
                         <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Criar nova conta</h2>
-                        <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Preencha os dados abaixo para criar sua conta</p>
+                        <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Preencha os dados abaixo para criar
+                            sua conta</p>
 
                         <form onsubmit="handleCadastro(event)">
                             <div class="form-group">
                                 <label class="form-label" for="cadastro-nome">Nome completo</label>
-                                <input type="text" id="cadastro-nome" class="form-input" placeholder="Seu nome" required>
+                                <input type="text" id="cadastro-nome" class="form-input" placeholder="Seu nome"
+                                    required>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="cadastro-email">E-mail</label>
-                                <input type="email" id="cadastro-email" class="form-input" placeholder="seu@email.com" required>
+                                <input type="email" id="cadastro-email" class="form-input" placeholder="seu@email.com"
+                                    required>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="cadastro-telefone">Telefone (opcional)</label>
-                                <input type="tel" id="cadastro-telefone" class="form-input" placeholder="(11) 98765-4321">
+                                <input type="tel" id="cadastro-telefone" class="form-input"
+                                    placeholder="(11) 98765-4321">
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="cadastro-senha">Senha</label>
-                                <input type="password" id="cadastro-senha" class="form-input" placeholder="••••••••" required>
+                                <input type="password" id="cadastro-senha" class="form-input" placeholder="••••••••"
+                                    required>
                             </div>
 
                             <div class="form-group">
                                 <label class="form-label" for="cadastro-confirmar">Confirmar senha</label>
-                                <input type="password" id="cadastro-confirmar" class="form-input" placeholder="••••••••" required>
+                                <input type="password" id="cadastro-confirmar" class="form-input" placeholder="••••••••"
+                                    required>
                             </div>
 
                             <div style="margin-bottom: 1.5rem;">
-                                <label style="display: flex; align-items-start; gap: 0.5rem; font-size: 0.875rem; color: var(--gray-700); cursor: pointer;">
+                                <label
+                                    style="display: flex; align-items-start; gap: 0.5rem; font-size: 0.875rem; color: var(--gray-700); cursor: pointer;">
                                     <input type="checkbox" class="form-checkbox" required style="margin-top: 0.25rem;">
                                     <span>
-                                        Concordo com os <a href="#" style="color: var(--purple-600);">termos de uso</a> e
+                                        Concordo com os <a href="#" style="color: var(--purple-600);">termos de uso</a>
+                                        e
                                         <a href="#" style="color: var(--purple-600);">política de privacidade</a>,
                                         e autorizo o tratamento dos meus dados conforme a LGPD
                                     </span>
@@ -124,7 +147,8 @@
             <div class="card mt-4">
                 <h3 style="font-weight: 600; margin-bottom: 0.5rem;">Proteção de Dados Pessoais</h3>
                 <p style="font-size: 0.875rem; color: var(--gray-700); line-height: 1.7;">
-                    Este site respeita e protege seus dados conforme a Lei Geral de Proteção de Dados (LGPD - Lei 13.709/2018).
+                    Este site respeita e protege seus dados conforme a Lei Geral de Proteção de Dados (LGPD - Lei
+                    13.709/2018).
                     Todas as informações fornecidas são tratadas com confidencialidade e segurança.
                 </p>
             </div>
@@ -157,14 +181,40 @@
             }
         }
 
-        function handleLogin(event) {
+        async function handleLogin(event) {
             event.preventDefault();
-            alert('Login realizado com sucesso!');
-            window.location.href = 'dashboard.html';
-        }
 
-        function handleCadastro(event) {
+            const email = document.getElementById('login-email').value;
+            const senha = document.getElementById('login-senha').value;
+
+            try {
+                const resposta = await fetch('http://localhost:3000/api/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, senha })
+                });
+
+                const resultado = await resposta.json();
+
+                if (resposta.ok) {
+                    alert('Login realizado com sucesso!');
+                    // Guarda o ID ou o Token da usuária se precisar identificar ela depois
+                    localStorage.setItem('id_usuario', resultado.id_usuario);
+                    window.location.href = 'dashboard.html';
+                } else {
+                    alert('Erro ao entrar: ' + resultado.error);
+                }
+            } catch (erro) {
+                console.error('Erro na requisição:', erro);
+                alert('Não foi possível conectar ao servidor backend.');
+            }
+        }
+        async function handleCadastro(event) {
             event.preventDefault();
+
+            const nome = document.getElementById('cadastro-nome').value;
+            const email = document.getElementById('cadastro-email').value;
+            const telefone = document.getElementById('cadastro-telefone').value;
             const senha = document.getElementById('cadastro-senha').value;
             const confirmar = document.getElementById('cadastro-confirmar').value;
 
@@ -173,15 +223,32 @@
                 return;
             }
 
-            alert('Cadastro realizado com sucesso!');
-            window.location.href = 'dashboard.html';
-        }
+            try {
+                const resposta = await fetch('http://localhost:3000/api/usuarios', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ nome, email, telefone, senha })
+                });
 
+                const resultado = await resposta.json();
+
+                if (resposta.ok) {
+                    alert('Cadastro realizado com sucesso!');
+                    showTab('login'); // Joga a usuária para a aba de login
+                } else {
+                    alert('Erro ao cadastrar: ' + resultado.error);
+                }
+            } catch (erro) {
+                console.error('Erro na requisição:', erro);
+                alert('Não foi possível conectar ao servidor backend.');
+            }
+        }
         // Estilizar tab ativo ao carregar
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('loginTab').style.background = 'var(--white)';
             document.getElementById('loginTab').style.color = 'var(--purple-600)';
         });
     </script>
 </body>
+
 </html>

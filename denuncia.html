@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fazer Denúncia - Voz Ativa</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="container header-content">
@@ -32,7 +35,8 @@
         </div>
     </header>
 
-    <section style="background: linear-gradient(135deg, var(--red-600), var(--purple-600)); color: var(--white); padding: 3rem 1rem;">
+    <section
+        style="background: linear-gradient(135deg, var(--red-600), var(--purple-600)); color: var(--white); padding: 3rem 1rem;">
         <div class="container">
             <div style="max-width: 48rem; margin: 0 auto;">
                 <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Formulário de Denúncia</h1>
@@ -45,7 +49,8 @@
 
     <section style="background: var(--red-600); color: var(--white); padding: 1.5rem 1rem;">
         <div class="container">
-            <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; text-align: center;">
+            <div
+                style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; text-align: center;">
                 <div style="display: flex; align-items: center; gap: 0.5rem;">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="12" cy="12" r="10"></circle>
@@ -55,8 +60,10 @@
                     <span style="font-weight: 600;">Em situação de risco imediato?</span>
                 </div>
                 <div style="display: flex; gap: 0.75rem;">
-                    <a href="tel:190" class="btn" style="background: var(--white); color: var(--red-600); padding: 0.5rem 1.5rem;">Ligar 190</a>
-                    <a href="tel:180" class="btn" style="background: var(--red-700); color: var(--white); padding: 0.5rem 1.5rem;">Ligar 180</a>
+                    <a href="tel:190" class="btn"
+                        style="background: var(--white); color: var(--red-600); padding: 0.5rem 1.5rem;">Ligar 190</a>
+                    <a href="tel:180" class="btn"
+                        style="background: var(--red-700); color: var(--white); padding: 0.5rem 1.5rem;">Ligar 180</a>
                 </div>
             </div>
         </div>
@@ -66,16 +73,20 @@
         <div class="container" style="max-width: 56rem;">
             <form onsubmit="handleSubmit(event)" class="card" style="padding: 2rem;">
                 <!-- Informações Importantes -->
-                <div style="background: var(--purple-50); border-left: 4px solid var(--purple-600); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
-                    <h3 style="font-weight: 600; margin-bottom: 0.75rem; color: var(--purple-900);">🔒 Suas Informações Estão Seguras</h3>
+                <div
+                    style="background: var(--purple-50); border-left: 4px solid var(--purple-600); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+                    <h3 style="font-weight: 600; margin-bottom: 0.75rem; color: var(--purple-900);">🔒 Suas Informações
+                        Estão Seguras</h3>
                     <p style="color: var(--purple-800); line-height: 1.7;">
-                        Todos os dados fornecidos neste formulário são protegidos pela Lei Geral de Proteção de Dados (LGPD - Lei 13.709/2018).
+                        Todos os dados fornecidos neste formulário são protegidos pela Lei Geral de Proteção de Dados
+                        (LGPD - Lei 13.709/2018).
                         Suas informações serão tratadas com total confidencialidade.
                     </p>
                 </div>
 
                 <!-- Dados Pessoais -->
-                <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--gray-200);">
+                <h2
+                    style="font-size: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--gray-200);">
                     📝 Dados Pessoais
                 </h2>
 
@@ -100,11 +111,13 @@
 
                 <div class="form-group">
                     <label class="form-label" for="endereco">Endereço Completo</label>
-                    <input type="text" id="endereco" class="form-input" placeholder="Rua, número, bairro, cidade, estado">
+                    <input type="text" id="endereco" class="form-input"
+                        placeholder="Rua, número, bairro, cidade, estado">
                 </div>
 
                 <!-- Descrição do Ocorrido -->
-                <h2 style="font-size: 1.5rem; margin: 2rem 0 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--gray-200);">
+                <h2
+                    style="font-size: 1.5rem; margin: 2rem 0 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--gray-200);">
                     📋 Descrição do Ocorrido
                 </h2>
 
@@ -128,13 +141,16 @@
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="local-ocorrido">Local do Ocorrido</label>
-                        <input type="text" id="local-ocorrido" class="form-input" placeholder="Ex: Residência, trabalho, via pública">
+                        <input type="text" id="local-ocorrido" class="form-input"
+                            placeholder="Ex: Residência, trabalho, via pública">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label class="form-label" for="descricao">Descreva o que aconteceu *</label>
-                    <textarea id="descricao" class="form-textarea" rows="6" maxlength="1000" placeholder="Descreva detalhadamente a situação. Quanto mais informações você fornecer, melhor poderemos ajudá-la." required></textarea>
+                    <textarea id="descricao" class="form-textarea" rows="6" maxlength="1000"
+                        placeholder="Descreva detalhadamente a situação. Quanto mais informações você fornecer, melhor poderemos ajudá-la."
+                        required></textarea>
                     <p style="font-size: 0.875rem; color: var(--gray-600); margin-top: 0.5rem;">Mínimo 50 caracteres</p>
                 </div>
 
@@ -144,7 +160,8 @@
                 </div>
 
                 <!-- Autorização LGPD -->
-                <h2 style="font-size: 1.5rem; margin: 2rem 0 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--gray-200);">
+                <h2
+                    style="font-size: 1.5rem; margin: 2rem 0 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--gray-200);">
                     ✅ Autorização e Consentimento
                 </h2>
 
@@ -153,7 +170,8 @@
                         <label style="display: flex; align-items: start; gap: 0.75rem; cursor: pointer;">
                             <input type="checkbox" class="form-checkbox" required style="margin-top: 0.25rem;">
                             <span style="line-height: 1.7; color: var(--gray-700);">
-                                Autorizo o compartilhamento dos meus dados com as autoridades competentes para investigação e providências cabíveis.
+                                Autorizo o compartilhamento dos meus dados com as autoridades competentes para
+                                investigação e providências cabíveis.
                             </span>
                         </label>
                     </div>
@@ -161,7 +179,8 @@
                         <label style="display: flex; align-items: start; gap: 0.75rem; cursor: pointer;">
                             <input type="checkbox" class="form-checkbox" required style="margin-top: 0.25rem;">
                             <span style="line-height: 1.7; color: var(--gray-700);">
-                                Estou ciente de que minha identidade será preservada e protegida durante todo o processo.
+                                Estou ciente de que minha identidade será preservada e protegida durante todo o
+                                processo.
                             </span>
                         </label>
                     </div>
@@ -169,7 +188,8 @@
                         <label style="display: flex; align-items: start; gap: 0.75rem; cursor: pointer;">
                             <input type="checkbox" class="form-checkbox" required style="margin-top: 0.25rem;">
                             <span style="line-height: 1.7; color: var(--gray-700);">
-                                Compreendo que posso revogar este consentimento a qualquer momento, solicitando a exclusão dos meus dados.
+                                Compreendo que posso revogar este consentimento a qualquer momento, solicitando a
+                                exclusão dos meus dados.
                             </span>
                         </label>
                     </div>
@@ -177,14 +197,18 @@
                         <label style="display: flex; align-items: start; gap: 0.75rem; cursor: pointer;">
                             <input type="checkbox" class="form-checkbox" required style="margin-top: 0.25rem;">
                             <span style="line-height: 1.7; color: var(--gray-700);">
-                                Li e concordo com os <a href="#" style="color: var(--purple-600); text-decoration: underline;">termos de uso</a> e a <a href="#" style="color: var(--purple-600); text-decoration: underline;">política de privacidade</a> desta plataforma.
+                                Li e concordo com os <a href="#"
+                                    style="color: var(--purple-600); text-decoration: underline;">termos de uso</a> e a
+                                <a href="#" style="color: var(--purple-600); text-decoration: underline;">política de
+                                    privacidade</a> desta plataforma.
                             </span>
                         </label>
                     </div>
                 </div>
 
                 <!-- Botões -->
-                <div style="display: flex; justify-content: flex-end; gap: 1rem; padding-top: 2rem; border-top: 2px solid var(--gray-200);">
+                <div
+                    style="display: flex; justify-content: flex-end; gap: 1rem; padding-top: 2rem; border-top: 2px solid var(--gray-200);">
                     <a href="index.html" class="btn btn-outline">Cancelar</a>
                     <button type="submit" class="btn btn-purple" style="padding: 0.75rem 2rem;">
                         Enviar Denúncia
@@ -195,8 +219,10 @@
             <!-- Informações de Apoio -->
             <div class="grid grid-2 mt-4">
                 <div class="card" style="background: var(--pink-50); border: 1px solid var(--pink-200);">
-                    <h3 style="font-weight: 600; margin-bottom: 1rem; color: var(--pink-900);">⚠️ Precisa de Ajuda Imediata?</h3>
-                    <p style="color: var(--pink-800); margin-bottom: 1rem; line-height: 1.7;">Se você está em perigo, não espere. Ligue imediatamente:</p>
+                    <h3 style="font-weight: 600; margin-bottom: 1rem; color: var(--pink-900);">⚠️ Precisa de Ajuda
+                        Imediata?</h3>
+                    <p style="color: var(--pink-800); margin-bottom: 1rem; line-height: 1.7;">Se você está em perigo,
+                        não espere. Ligue imediatamente:</p>
                     <div style="display: flex; flex-direction: column; gap: 0.5rem;">
                         <a href="tel:190" class="btn btn-pink" style="width: 100%;">📞 190 - Polícia</a>
                         <a href="tel:180" class="btn btn-pink" style="width: 100%;">📞 180 - Central da Mulher</a>
@@ -204,11 +230,15 @@
                 </div>
 
                 <div class="card" style="background: var(--purple-50); border: 1px solid var(--purple-200);">
-                    <h3 style="font-weight: 600; margin-bottom: 1rem; color: var(--purple-900);">💬 Dúvidas sobre o Formulário?</h3>
-                    <p style="color: var(--purple-800); margin-bottom: 1rem; line-height: 1.7;">Não sabe como preencher ou precisa de orientação?</p>
+                    <h3 style="font-weight: 600; margin-bottom: 1rem; color: var(--purple-900);">💬 Dúvidas sobre o
+                        Formulário?</h3>
+                    <p style="color: var(--purple-800); margin-bottom: 1rem; line-height: 1.7;">Não sabe como preencher
+                        ou precisa de orientação?</p>
                     <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                        <a href="como-pedir-ajuda.html" class="btn btn-purple" style="width: 100%;">Ver Canais de Apoio</a>
-                        <a href="tipos-violencia.html" class="btn btn-outline" style="width: 100%;">Tipos de Violência</a>
+                        <a href="como-pedir-ajuda.html" class="btn btn-purple" style="width: 100%;">Ver Canais de
+                            Apoio</a>
+                        <a href="tipos-violencia.html" class="btn btn-outline" style="width: 100%;">Tipos de
+                            Violência</a>
                     </div>
                 </div>
             </div>
@@ -216,9 +246,12 @@
     </section>
 
     <!-- Modal de Sucesso -->
-    <div id="successModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 9999; align-items: center; justify-content: center;">
-        <div style="background: var(--white); border-radius: 1rem; padding: 3rem; max-width: 32rem; margin: 1rem; text-align: center;">
-            <div style="width: 80px; height: 80px; border-radius: 50%; background: #DCFCE7; color: #16A34A; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem;">
+    <div id="successModal"
+        style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 9999; align-items: center; justify-content: center;">
+        <div
+            style="background: var(--white); border-radius: 1rem; padding: 3rem; max-width: 32rem; margin: 1rem; text-align: center;">
+            <div
+                style="width: 80px; height: 80px; border-radius: 50%; background: #DCFCE7; color: #16A34A; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem;">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
@@ -226,11 +259,14 @@
             </div>
             <h2 style="font-size: 1.875rem; margin-bottom: 1rem;">Denúncia Enviada com Sucesso!</h2>
             <p style="color: var(--gray-700); margin-bottom: 1.5rem; line-height: 1.7;">
-                Sua denúncia foi registrada e será encaminhada às autoridades competentes. Guarde este número de protocolo:
+                Sua denúncia foi registrada e será encaminhada às autoridades competentes. Guarde este número de
+                protocolo:
             </p>
             <div style="background: var(--purple-50); padding: 1rem; border-radius: 0.5rem; margin-bottom: 2rem;">
                 <p style="font-weight: 600; color: var(--purple-900);">Protocolo:</p>
-                <p id="protocolNumber" style="font-size: 1.5rem; font-weight: bold; color: var(--purple-600); margin-top: 0.5rem;">VA-2026-000000</p>
+                <p id="protocolNumber"
+                    style="font-size: 1.5rem; font-weight: bold; color: var(--purple-600); margin-top: 0.5rem;">
+                    VA-2026-000000</p>
             </div>
             <button onclick="closeModal()" class="btn btn-purple" style="width: 100%; margin-bottom: 0.75rem;">
                 Ir para Minhas Denúncias
@@ -260,8 +296,10 @@
             </div>
             <div class="footer-section">
                 <h3>Emergência</h3>
-                <a href="tel:180" class="footer-link" style="font-weight: 600; color: var(--red-400);">180 - Central da Mulher</a>
-                <a href="tel:190" class="footer-link" style="font-weight: 600; color: var(--red-400);">190 - Polícia Militar</a>
+                <a href="tel:180" class="footer-link" style="font-weight: 600; color: var(--red-400);">180 - Central da
+                    Mulher</a>
+                <a href="tel:190" class="footer-link" style="font-weight: 600; color: var(--red-400);">190 - Polícia
+                    Militar</a>
             </div>
         </div>
         <div class="container footer-bottom">
@@ -271,23 +309,60 @@
 
     <script src="js/script.js"></script>
     <script>
-        function handleSubmit(event) {
+        async function handleSubmit(event) {
             event.preventDefault();
 
-            // Validações básicas
             const descricao = document.getElementById('descricao').value;
             if (descricao.length < 50) {
                 alert('A descrição deve ter pelo menos 50 caracteres.');
                 return;
             }
 
-            // Gerar protocolo aleatório
-            const protocolo = 'VA-2026-' + String(Math.floor(Math.random() * 900000 + 100000)).padStart(6, '0');
-            document.getElementById('protocolNumber').textContent = protocolo;
+            // Captura os valores digitados no formulário
+            const dadosDenuncia = {
+                id_usuario: localStorage.getItem('id_usuario') || null,
+                nome: document.getElementById('nome').value,
+                cpf: document.getElementById('cpf').value,
+                email: document.getElementById('email').value,
+                telefone: document.getElementById('telefone').value,
+                endereco: document.getElementById('endereco').value,
+                tipo_violencia: document.getElementById('tipo-violencia').value,
+                data_ocorrido: document.getElementById('data-ocorrido').value || null,
+                local_ocorrido: document.getElementById('local-ocorrido').value,
+                descricao: descricao,
+                agressor: document.getElementById('agressor').value
+            };
 
-            // Mostrar modal
+            try {
+                // Envia os dados para a nova rota do backend
+                const resposta = await fetch('http://localhost:3000/api/denuncias', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(dadosDenuncia)
+                });
+
+                const resultado = await resposta.json();
+
+                if (resposta.ok) {
+                    // Exibe o número de protocolo gerado e salvo pelo banco de dados
+                    document.getElementById('protocolNumber').textContent = resultado.protocolo;
+
+                    // Mostra o modal de sucesso nativo do seu HTML
+                    const modal = document.getElementById('successModal');
+                    modal.style.display = 'flex';
+                } else {
+                    alert('Erro ao enviar denúncia: ' + resultado.error);
+                }
+            } catch (erro) {
+                console.error('Erro na requisição:', erro);
+                alert('Não foi possível conectar ao servidor backend.');
+            }
+        }
+
+        function closeModal() {
             const modal = document.getElementById('successModal');
-            modal.style.display = 'flex';
+            modal.style.display = 'none';
+            window.location.href = 'dashboard.html';
         }
 
         function closeModal() {
@@ -297,4 +372,5 @@
         }
     </script>
 </body>
+
 </html>
